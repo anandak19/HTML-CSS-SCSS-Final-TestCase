@@ -1,0 +1,38 @@
+.ourvision-section{
+    height: 200px;
+    width: 100%;
+    padding: 66px 784px 241px 47px;
+    color: $white;
+    background-color: $primary-color;
+    background-image: url('../images/backgrounds/Our-vision.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__heading{
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 52px;
+    }
+    &__discription{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+    }
+}
+
+
+@include mobile{
+    .ourvision-section{
+        padding: 72px 40px 343px 40px;
+    
+        &__heading{
+            font-size: 28px;
+            line-height: 28px;
+            padding-bottom: $spacer-3;
+        }
+        &__discription{
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+}

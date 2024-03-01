@@ -1,0 +1,20 @@
+.value-points-collection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+
+    .value-point{
+        width: calc(33.33% - 60px);
+        margin-bottom: 20px; 
+    }
+}
+
+
+@include mobile{
+    .value-points-collection{    
+        .value-point{
+            width: calc(50% - 20px);
+        }
+    }
+}

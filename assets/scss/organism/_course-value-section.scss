@@ -1,0 +1,44 @@
+.course-value-section{
+    background-color: $cv-white;
+    display: flex;
+    padding-top: 400px;
+    padding: 400px 0 0 0;
+    .value-points-collection{
+        margin-top: 20px;
+        width: 800px;
+    }
+    &__left{
+        width: 50%;
+    }
+    .cv-background{
+        margin-left: 242px;
+    }
+
+}
+
+@include mobile{
+    .course-value-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding-top: 200px;
+        .value-points-collection{
+            margin-top: 30px;
+            width: 400px;
+        }
+        &__left{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .cv-background{
+            margin-left: 0px;
+        }
+        .headline{
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+    
+    }
+}

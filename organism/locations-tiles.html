@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intakes-section</title>
+    <!-- <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="locations-tiles">
+        <div class="locations-tiles__carousal">
+        <div class="listing-tiles listing-tiles--country">
+            <div class="listing-tiles__iconset">
+                <img src="../assets/icons/locations/united-arab-emirates.svg" alt="" class="listing-tiles__icon">
+            </div>
+            <h3 class="listing-tiles__heading">Beinex – UAE</h3>
+            <p class="listing-tiles__para">
+                506, BB01, Bay Square,
+                Business Bay,
+                P. O. Box 82940,
+                Dubai, United Arab Emirates Phone: +971 4 243 9494
+                Mobile: +971 52 695 0068
+                Email: Info@beinex.com
+            </p>
+        </div>
+
+        <div class="listing-tiles listing-tiles--country">
+            <div class="listing-tiles__iconset">
+                <img src="../assets/icons/locations/qatar.svg" alt="" class="listing-tiles__icon">
+            </div>
+            <h3 class="listing-tiles__heading">Beinex - Qatar</h3>
+            <p class="listing-tiles__para">
+                Global Business Centre II,
+                Office No. R19, 2nd floor Al Hitmi Village, Building No 40, Cornish Road, Doha, Qatar
+                P.O Box 25422
+                Office: +974 44023981
+                Phone: +974 50682589
+                Email: info@beinex.qa
+            </p>
+        </div>
+
+        <div class="listing-tiles listing-tiles--country">
+            <div class="listing-tiles__iconset">
+                <img src="../assets/icons/locations/united-kingdom.svg" alt="" class="listing-tiles__icon">
+            </div>
+            <h3 class="listing-tiles__heading">Beinex – United Kingdom</h3>
+            <p class="listing-tiles__para">
+                New Broad Street House
+                35 New Broad St
+                London England EC2M 1NH
+                Phone: +44 7539 393552
+                Email: UK@beinex.com
+            </p>
+        </div>
+
+        <div class="listing-tiles listing-tiles--country">
+            <div class="listing-tiles__iconset">
+                <img src="../assets/icons/locations/india.svg" alt="" class="listing-tiles__icon">
+            </div>
+            <h3 class="listing-tiles__heading">Beinex – India (Kochi)</h3>
+            <p class="listing-tiles__para">
+                #19, Ground Level
+                Infopark TBC, JNI Stadium
+                Kaloor, Kochi
+                Kerala 682017, India
+                Office: +91 484 4855800
+                Mobile: +91 920 7204499
+                Mobile: +91 952 6451099
+                Email: Info@beinex.com
+            </p>
+        </div>
+
+        <div class="listing-tiles listing-tiles--country">
+            <div class="listing-tiles__iconset">
+                <img src="../assets/icons/locations/kenya.svg" alt="" class="listing-tiles__icon">
+            </div>
+            <h3 class="listing-tiles__heading">Beinex – Kenya</h3>
+            <p class="listing-tiles__para">
+                Beinex Consulting Ltd
+                Purshottam Place, 7th floor,
+                Westlands Rd, Museum Hill P. O.
+                Box 66217-00800, Nairobi, Kenya.
+                Phone: +254 020 515 4016
+                Email: Info@beinex.com
+            </p>
+        </div>
+    </div>
+
+    <div class="locations-tiles__subscribe">
+        <div class="locations-tiles__newsletter">
+            <h3 class="locations-tiles__letterhead">Subscribe to our newsletter</h3>
+            <p class="locations-tiles__letterfoot">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae ac facilisis.</p>
+        </div>
+        <div class="locations-tiles__emailtake">
+            <input type="email" placeholder="your email address" class="locations-tiles__typing">
+            <div class="locations-tiles__button">
+            <img src="../assets/icons/header-footer/arrow-right.svg" alt="Submit">
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.locations-tiles__carousal').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 5000,
+            });
+        });
+    </script>
+</body>
+</html>

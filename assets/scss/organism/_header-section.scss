@@ -1,0 +1,14 @@
+.header-section{
+    background-color: rgb(243, 246, 249);
+    padding: 0 $spacer-4;
+    // position: fixed;
+    // z-index: 1000;
+    width: 100%;
+    .header-bottom {
+        border-top: 2px solid rgba(109, 109, 109, 0.484);
+    }
+
+    .navbar-container{
+        background-color: $white;
+    }
+}

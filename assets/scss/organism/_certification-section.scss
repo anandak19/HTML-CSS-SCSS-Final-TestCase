@@ -1,0 +1,60 @@
+.certification-section {
+    position: relative;
+    background-image: url('../images/backgrounds/T&A-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $primary-color;
+    height: fit-content;
+    z-index: 0;
+    padding: 20px 20px 0 20px;
+    display: flex;
+    width: 100%;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3));
+        z-index: -1;
+    }
+
+    .certification-points {
+        position: relative;
+        z-index: 1;
+        width: 50%;
+    }
+
+    &__person{
+        width: 50%;
+        position: relative;
+        z-index: 1;
+    }
+    &__image{
+        margin-left: -27px;
+        width: 593px;
+    }
+}
+
+
+@include mobile{
+    .certification-section {
+        padding: 50px 20px 50 20px;
+        flex-direction: column-reverse;
+    
+        &__person{
+            width: 100%;
+            position: relative;
+            z-index: 1;
+        }
+        &__image{
+            margin-left: -2px;
+            width: 483px;
+        }
+        .certification-points {
+            width: 100%;
+        }
+    }
+}

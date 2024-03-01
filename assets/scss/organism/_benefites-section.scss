@@ -1,0 +1,82 @@
+.benefites-section{
+    background-color: $primary-color;
+    height: 527px;
+    background-image: url('../images/backgrounds/benifits-background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &__ellipse{
+        position: absolute;
+        height: 29px;
+        left: 253px;
+        top: 229px;
+    }
+    .headline{
+        padding: 54px;
+    }
+    &__tiles{
+        height: 346px;
+        width: 1340px;
+        position: absolute;
+        background-color: $white;
+        left: 100px;
+        top: 357px;
+        & button{
+            background-color: $primary-color;
+        }
+    }
+    .listing-tiles{
+        width: 300px;
+        margin: 20px 0;
+    }
+    .course-value-section{
+        margin-top: 351px;
+        background-color: #F1F5F8;
+        display: flex;
+        padding: 175px 50px 0px 50px;
+    }
+}
+
+
+
+@include mobile{
+    .benefites-section{
+        height: 527px;
+        margin-top: 28px;
+        background-image: url('../images/backgrounds/benifits-background2.png');
+
+        &__ellipse{
+            display: none;
+        }
+        .headline{
+            padding-top: 44px;
+            padding-left: 200px;
+        }
+
+
+        &__tiles{
+            height: 432px;
+            width: 578px;
+            position: absolute;
+            background-color: $white;
+            left: 19px;
+            top: 327px;
+
+        }
+        .listing-tiles{
+            width: 178px;
+            margin: 12px 0;
+        }
+        .course-value-section{
+            margin-top: 351px;
+            background-color: #F1F5F8;
+            display: flex;
+            padding: 215px 50px 0px 50px;
+            .headline{
+                padding-top: 72px;
+                padding-left: 75px;
+            }
+        }
+    }
+}

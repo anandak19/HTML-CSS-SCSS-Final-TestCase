@@ -1,0 +1,87 @@
+.intakes-tile-prime{
+    height: 202px;
+    width: 884px;
+    background-color: $skyblue-de;
+    padding: 18px;
+    &__head{
+        display: flex;
+        position: relative;
+        padding-bottom: $spacer-3;
+    }
+    &__rectangle{
+        height: 100%;
+    }
+    &__heading{
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+        margin-bottom: 0;
+        margin-left: $spacer-2;
+        color: $white;
+    }
+    &__arrow{
+        position: absolute;
+        right: 0;
+    }
+
+
+    &__text{
+        color: $white;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+    }
+    &__foot{
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    &__announce{
+        margin-left: 100px;
+    }
+    &__label{
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.549);
+    }
+    &__dated{
+        font-size: 14px;
+        font-weight: 600;
+        color: $white;
+    }
+
+    .button-as{
+        position: absolute;
+        right: 0;
+    }
+}
+
+
+@include mobile{
+    .intakes-tile-prime{
+        height: 202px;
+        width: 700px;
+        background-color: $skyblue-de;
+        padding: 18px;
+
+
+        &__heading{
+            font-size: 16px;
+            line-height: 24px;
+        }
+    
+        &__announce{
+            margin-left: 30px;
+        }
+        &__label{
+            font-size: 14px;
+        }
+        &__dated{
+            font-size: 14px;
+        }
+    
+        .button-as{
+            right: 0;
+        }
+    }
+}

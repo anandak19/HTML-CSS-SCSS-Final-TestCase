@@ -1,0 +1,62 @@
+.absorbtion-tiles{
+    // margin: 100px;
+    width: 198px;
+    height: 244px;
+    text-align: center;
+    background-color: $skyblue-b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__pookutty{
+        margin-top: -147px;
+        margin-bottom: 9px;
+    }
+    &__b{
+        width: 46px;
+        margin: 10px 0;
+        
+    }
+    &__heading{
+        color: $white;
+        font-size: 27px;
+        font-weight: 600;
+    }
+    &__para{
+        color: $white;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        margin: 0 10px;
+    }
+
+}
+
+@include mobile{
+    .absorbtion-tiles{
+        width: 198px;
+        height: 208px;
+    
+        &__pookutty{
+            width: 98px;
+            margin-top: -119px;
+            margin-bottom: 3px;
+        }
+        &__b{
+            width: 38px;
+            margin: 8px 0;
+            
+        }
+        &__heading{
+            font-size: 18px;
+        }
+        &__para{
+            font-size: 16px;
+            line-height: 19px;
+            margin: 0 8px;
+        }
+    
+    }
+}

@@ -1,0 +1,101 @@
+.form-input{
+    position: relative;
+    height: fit-content;
+    width: 366px;
+    // width: 100%;
+
+    &__contentin{
+        width: 365px;
+        padding: $spacer-2;
+        border: 2px solid rgba(162, 160, 160, 0.499);
+        outline: none;
+    }
+    &__icon{
+        position: absolute;
+        left: 339px;
+        top: 23%;
+    }
+
+    &--phone{
+        .form-input{
+            display: flex;
+            &__code{
+                width: 20%;
+                padding: $spacer-2;
+                border: 2px solid rgba(162, 160, 160, 0.499);
+                outline: none;
+                margin-right: -5px;
+            }
+            &__contentin{
+                width: 80%;
+                border-left: none;
+            }
+
+        } ///////completed
+
+    }
+    &--message{
+        width: 746px;
+        .form-input{
+            &__contentin{
+                height: 66px;
+                width: 100%;
+            }
+            &__icon{
+                left: 719px;
+                top: 19%;
+            }
+        }
+    }
+}
+
+
+
+@include mobile{
+
+    .form-input{
+        width: 228px;
+    
+        &__contentin{
+            width: 100%;
+            padding: $spacer-1;
+            font-size: 13px;
+        }
+        &__contentin::placeholder{
+            font-size: 13px;
+        }
+        &__icon{
+            left: 200px;
+            height: 15px;
+        }
+    
+        &--phone{
+            .form-input{
+                display: flex;
+                &__code{
+                    padding: $spacer-1;
+                    font-size: 13px;
+                }
+                &__code::placeholder{
+                    font-size: 13px;
+                }
+
+
+    
+            } ///////completed
+    
+        }
+        &--message{
+            width: 510px;
+            .form-input{
+                &__contentin{
+                    height: 66px;
+                    width: 100%;
+                }
+                &__icon{
+                    left: 483px;
+                }
+            }
+        }
+    }
+}

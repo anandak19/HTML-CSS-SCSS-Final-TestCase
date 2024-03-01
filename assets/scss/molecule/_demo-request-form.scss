@@ -1,0 +1,43 @@
+.demo-request-form{
+
+    &__form-wrapper{
+        display: grid;
+        grid-template-columns: 366px 366px;
+        grid-auto-rows: minmax(36px, auto);
+        grid-row-gap: 14px;
+        grid-column-gap: 15px;
+    }
+    &__item-message{
+        grid-column: 1 / -1;
+    }
+    .button-as{
+        margin-top: 12px;
+    }
+    .headline{
+        margin-bottom: $spacer-4;
+    }
+
+}
+
+
+
+@include mobile{
+    .demo-request-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        &__form-wrapper{
+            grid-template-columns: 268px 268px;
+            grid-auto-rows: minmax(36px, auto);
+            grid-row-gap: $spacer-2;
+        }
+        .button-as{
+            margin-top: 14px;
+        }
+        .headline{
+            margin-bottom: $spacer-2;
+        }
+    
+    }
+}

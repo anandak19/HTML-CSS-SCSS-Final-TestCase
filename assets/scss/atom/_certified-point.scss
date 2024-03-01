@@ -1,0 +1,32 @@
+.certified-point{
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    width: 344px;
+
+    &__icon{
+        width: 40px;
+    }
+    &__text{
+        font-size: 16px;
+        font-weight: 400;
+        color: $white;
+        margin-bottom: 0;
+        padding-left: $spacer-4;
+    }
+}
+
+
+@include mobile{
+    .certified-point{
+        width: 300px;
+    
+        &__icon{
+            width: 28px;
+        }
+        &__text{
+            font-size: 14px;
+            padding-left: $spacer-2;
+        }
+    }
+}

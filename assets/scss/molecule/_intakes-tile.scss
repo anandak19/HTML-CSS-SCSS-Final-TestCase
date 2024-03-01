@@ -1,0 +1,66 @@
+.intakes-tile{
+    height: 186px;
+    width: 427px;
+    background-color: $dark-blue;
+    padding: 18px;
+
+    &__head{
+        display: flex;
+        padding-bottom: $spacer-3;
+    }
+    &__rectangle{
+        height: 100%;
+    }
+    &__heading{
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+        margin-bottom: 0;
+        margin-left: $spacer-2;
+        color: $white;
+    }
+
+    &__content{
+        position: relative;
+    }
+    &__label{
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.549);
+    }
+    &__dated{
+        font-size: 14px;
+        font-weight: 600;
+        color: $white;
+    }
+    &__arrow{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+
+@include mobile{
+    .intakes-tile{
+        height: 186px;
+        width: 256px;
+        padding: 16px;
+
+        &__heading{
+            font-size: 16px;
+            line-height: 24px;
+            margin-left: $spacer-2;
+        }
+
+        &__label{
+            font-size: 12px;
+        }
+        &__dated{
+            font-size: 12px;
+        }
+        &__arrow{
+            height: 20px;
+        }
+    }
+}

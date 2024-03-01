@@ -1,0 +1,73 @@
+.listing-tiles{
+    width: 198px;
+    padding: $spacer-5;
+    &__lines{
+        float: right;
+        margin-top: $spacer-3;
+    }
+    &__heading{
+        padding: $spacer-3 0;
+        color: $primary-color;
+        font-size: 18px;
+    }
+    &__para{
+        color: $light-ash;
+        font-size: 15px;
+    }
+
+    &--country{
+        width: 202px;
+        height: fit-content;
+        padding: $spacer-3;
+        .listing-tiles{
+            &__heading{
+                padding: $spacer-4 0;
+                color: #000000;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+            }
+            &__para{
+                font-size: 14px;
+                line-height: 21px;
+            }
+            &__iconset{
+                height: 34px;
+            }
+            &__icon{
+                width: 35px;
+                margin-left: -7px;
+                
+            }
+        }
+
+    }
+
+}
+
+
+
+@include mobile{
+    .listing-tiles{
+        width: 178px;
+        padding: $spacer-3;
+
+        &__icon{
+            height: 28px;
+        }
+        &__heading{
+            padding: $spacer-2 0;
+            font-size: 16px;
+        }
+        &__para{
+            font-size: 14px;
+        }
+        &--country{
+            .listing-tiles{
+                &__heading{
+                    width: 150px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+.cv-background{
+    height: 402px;
+    width: 478px;
+    background-image: url('../images/backgrounds/course-value-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__icon1{
+        transform: translate(14px, 231px);
+        height: 52px;
+    }
+    &__icon2{
+        transform: translate(-23px, 73px);
+        height: 54px;
+    }
+    &__icon3{
+        transform: translate(68px, 2px);
+        height: 64px;
+    }
+    &__icon4{
+        transform: translate(164px, 70px);
+        height: 60px;
+    }
+    &__icon5{
+        transform: translate(146px, 240px);
+        height: 75px;
+    }
+}
+
+
+@include mobile{
+    .cv-background{
+        height: 265px;
+        width: 311px;
+    
+        &__icon1{
+            transform: translate(8px, 145px);
+            height: 35px;
+        }
+        &__icon2{
+            transform: translate(-14px, 36px);
+            height: 38px;
+        }
+        &__icon3{
+            transform: translate(40px, -2px);
+            height: 47px;
+        }
+        &__icon4{
+            transform: translate(98px, 34px);
+            height: 39px;
+        }
+        &__icon5{
+            transform: translate(79px, 152px);
+            height: 56px;
+        }
+    }
+}

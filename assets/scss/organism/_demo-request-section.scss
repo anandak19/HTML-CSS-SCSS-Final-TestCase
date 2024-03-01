@@ -1,0 +1,20 @@
+.demo-request-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $spacer-6 $spacer-7;
+}
+
+
+@include mobile{
+    .demo-request-section{
+        flex-direction: column;
+
+        .separator{
+            display: none;
+        }
+        .next-step{
+            margin-top: $spacer-6;
+        }
+    }
+}

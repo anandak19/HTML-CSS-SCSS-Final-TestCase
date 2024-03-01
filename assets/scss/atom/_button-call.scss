@@ -1,0 +1,24 @@
+.button-call{
+    background-color: $primary-color;
+    color: $white;
+    font-size: .9rem;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    &__icon{
+        padding-right: 8px;
+        box-sizing: border-box;
+    }
+}
+
+
+@include mobile{
+    .button-call{
+        font-size: .7rem;
+        padding: 5px;
+        &__icon{
+            padding-right: 5px;
+            height: 12px;
+        }
+    }
+}

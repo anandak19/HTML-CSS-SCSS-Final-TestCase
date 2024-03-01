@@ -1,0 +1,61 @@
+.headline{
+    width: max-content;
+    &__sub{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        color: $primary-color;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0;
+    }
+
+    &__wrappers{
+        display: flex;
+        align-items: center;
+    }
+    &__main{
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 48px;
+        color: $primary-color;
+        
+    }
+    &__lines{
+        flex-grow: 1;
+        border-top: 2px solid $primary-color;
+        margin-left: 18px;
+    }
+
+    &--white{
+        .headline{
+            &__sub{
+                color: $white;
+            }
+    
+            &__main{
+                color: $white;
+            }
+            &__lines{
+                border-top: 2px solid $white;
+            }
+        }
+
+    }
+}
+
+@include mobile {
+    .headline{
+        &__sub{
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 20px;
+        }
+
+        &__main{
+            font-size: 22px;
+            line-height: 42px;
+        }
+
+    }
+}

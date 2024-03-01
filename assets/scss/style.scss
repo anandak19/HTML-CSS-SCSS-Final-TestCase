@@ -1,0 +1,51 @@
+//base
+@import './base/base';
+@import './base/spacer';
+@import './base/color';
+@import './base/mixin';
+
+//atom
+@import './atom/points';
+@import './atom/button-call';
+@import './atom/button-as';
+@import './atom/certified-point';
+@import './atom/value-point';
+@import './atom/form-input';
+@import './atom/headline';
+@import './atom/separator';
+
+//molecule
+@import './molecule/social-icons';
+@import './molecule/navbar';
+@import './molecule/header-top';
+@import './molecule/listing-tiles';
+@import './molecule/absorption-tile';
+@import './molecule/testimonial-tile';
+@import './molecule/course-value-background';
+@import './molecule/value-points-collection';
+@import './molecule/intakes-tile';
+@import './molecule/intakes-tile-prime';
+@import './molecule/demo-request-form';
+@import './molecule/next-step';
+@import './molecule/certification-points';
+@import './molecule/links-wrapper';
+
+// organism
+@import './organism/header-section';
+@import './organism/ourvision-section';
+@import './organism/testimonial-section';
+@import './organism/intakes-section';
+@import './organism/course-value-section';
+@import './organism/benefites-section';
+@import './organism/demo-request-section';
+@import './organism/t-a-section';
+@import './organism/certification-section';
+@import './organism/locations-tiles';
+@import './organism/footer-top';
+@import './organism/footer';
+
+
+
+
+
+

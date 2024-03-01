@@ -1,0 +1,10 @@
+.navbar-container {
+    &__item {
+        margin-left: $spacer-3;
+        & a {
+            color: $primary-color;
+            font-size: 1rem;
+        }
+    }
+}
+

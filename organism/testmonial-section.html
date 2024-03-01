@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial section</title>
+    <!-- <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="content-wrapper">
+        <div class="testimonial-section">
+            <h1 class="testimonial-section__heading">Employee Testimonial</h1>
+            <p class="testimonial-section__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam 
+                nonummy nibh euismod tincidunt ut<br> laoreet dolore magna aliquam erat volutpat.</p>
+
+                <div class="testimonial-section__controller">
+                    <button class="prev-btn"><img src="../assets/icons/testimonials-benifits/arrow-left.svg" alt="Previous"></button>
+                    <button class="next-btn"><img src="../assets/icons/testimonials-benifits/arrow-right.svg" alt="Next"></button>
+                </div>
+
+
+           <div class="testimonial-section__carousels">
+
+            <div class="testimonial-tile">
+                <img src="../assets/images/employees/vismaya.png" alt="" class="testimonial-tile__image">
+                <div class="testimonial-tile__contents">
+                    <img src="../assets/icons/testimonials-benifits/testimonial-quote.svg" alt="" class="testimonial-tile__quote">
+                    <h3 class="testimonial-tile__name">Vismaya Balakrishnan</h3>
+                    <p class="testimonial-tile__text">
+                        As a fresher, Beinex is the only company that provided me with 
+                        a training & absorption opportunity. What I love here is the ..
+                    </p>
+                    <label for="" class="testimonial-tile__more">Read more ⌵</label>
+                </div>
+            </div>
+
+            <div class="testimonial-tile">
+                <img src="../assets/images/employees/devika.png" alt="" class="testimonial-tile__image">
+                <div class="testimonial-tile__contents">
+                    <img src="../assets/icons/testimonials-benifits/testimonial-quote.svg" alt="" class="testimonial-tile__quote">
+                    <h3 class="testimonial-tile__name">Devika Jyothy</h3>
+                    <p class="testimonial-tile__text">
+                        First of all, as a fresher, this is the most incredible opportunity I can ever get.
+                         Three months of internship and getting a job in the ...
+                    </p>
+                    <label for="" class="testimonial-tile__more">Read more ⌵</label>
+                </div>
+            </div>
+
+            <div class="testimonial-tile">
+                <img src="../assets/images/employees/azaz.png" alt="" class="testimonial-tile__image">
+                <div class="testimonial-tile__contents">
+                    <img src="../assets/icons/testimonials-benifits/testimonial-quote.svg" alt="" class="testimonial-tile__quote">
+                    <h3 class="testimonial-tile__name">Azaz Ahmed Khan</h3>
+                    <p class="testimonial-tile__text">
+                        When I started my training program at Beinex last year, I always dreamed
+                         about working here as a permanent employee because, during the...
+                    </p>
+                    <label for="" class="testimonial-tile__more">Read more ⌵</label>
+                </div>
+            </div>
+
+            <div class="testimonial-tile">
+                <img src="../assets/images/employees/vismaya.png" alt="" class="testimonial-tile__image">
+                <div class="testimonial-tile__contents">
+                    <img src="../assets/icons/testimonials-benifits/testimonial-quote.svg" alt="" class="testimonial-tile__quote">
+                    <h3 class="testimonial-tile__name">Vismaya Balakrishnan</h3>
+                    <p class="testimonial-tile__text">
+                        As a fresher, Beinex is the only company that provided me with 
+                        a training & absorption opportunity. What I love here is the ..
+                    </p>
+                    <label for="" class="testimonial-tile__more">Read more ⌵</label>
+                </div>
+            </div>
+
+            <div class="testimonial-tile">
+                <img src="../assets/images/employees/devika.png" alt="" class="testimonial-tile__image">
+                <div class="testimonial-tile__contents">
+                    <img src="../assets/icons/testimonials-benifits/testimonial-quote.svg" alt="" class="testimonial-tile__quote">
+                    <h3 class="testimonial-tile__name">Devika Jyothy</h3>
+                    <p class="testimonial-tile__text">
+                        First of all, as a fresher, this is the most incredible opportunity I can ever get.
+                         Three months of internship and getting a job in the ...
+                    </p>
+                    <label for="" class="testimonial-tile__more">Read more ⌵</label>
+                </div>
+            </div>
+
+            <div class="testimonial-tile">
+                <img src="../assets/images/employees/azaz.png" alt="" class="testimonial-tile__image">
+                <div class="testimonial-tile__contents">
+                    <img src="../assets/icons/testimonials-benifits/testimonial-quote.svg" alt="" class="testimonial-tile__quote">
+                    <h3 class="testimonial-tile__name">Azaz Ahmed Khan</h3>
+                    <p class="testimonial-tile__text">
+                        When I started my training program at Beinex last year, I always dreamed
+                         about working here as a permanent employee because, during the...
+                    </p>
+                    <label for="" class="testimonial-tile__more">Read more ⌵</label>
+                </div>
+            </div>
+
+           </div>
+        
+        </div>
+    </div>
+
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.testimonial-section__carousels').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                // autoplay: true,
+                autoplaySpeed: 2000,
+            });
+
+            $('.prev-btn').on('click', function() {
+                $('.testimonial-section__carousels').slick('slickPrev');
+            });
+
+            $('.next-btn').on('click', function() {
+                $('.testimonial-section__carousels').slick('slickNext');
+            });
+        });
+    </script>
+</body>
+</html>

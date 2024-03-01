@@ -1,0 +1,25 @@
+.value-point{
+    text-align: center;
+    width: fit-content;
+    &__image{
+        width: 37px; 
+    }
+    &__description{
+        margin-top: $spacer-2;
+        font-size: 14px;
+        color: $primary-color;
+    }
+}
+
+
+@include mobile{
+    .value-point{
+        &__image{
+            width: 32px; 
+        }
+        &__description{
+            margin-top: $spacer-1;
+            font-size: 13px;
+        }
+    }
+}

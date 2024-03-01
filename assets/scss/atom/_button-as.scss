@@ -1,0 +1,27 @@
+.button-as{
+    background-color: $skyblue-abi;
+    color: $white;
+    font-size: .9rem;
+    padding: $spacer-2 $spacer-4;
+    display: flex;
+    align-items: center;
+    &__arrow{
+        padding-left: $spacer-2;
+    }
+    &--smt{
+        background-color: $primary-color;
+    }
+}
+
+
+@include mobile{
+    .button-as{
+        font-size: .7rem;
+        padding: $spacer-1 $spacer-2;
+
+        &__arrow{
+            padding-left: $spacer-1;
+            height: 10px;
+        }
+    }
+}

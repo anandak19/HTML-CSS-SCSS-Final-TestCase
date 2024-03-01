@@ -1,0 +1,49 @@
+.t-a-section{
+    padding: $spacer-6 $spacer-7;
+
+    &__tiles{
+        display: flex;
+        height: 276px;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .listing-tiles{
+        width: 208px;
+        padding: 0;
+    }
+    .absorbtion-tiles{
+        width: 208;
+
+    }
+    
+}
+
+
+
+@include mobile{
+    .t-a-section{
+        padding: $spacer-1 $spacer-1;
+    
+        &__tiles{
+            display: grid;
+            grid-template-columns: 200px 200px 250px;
+            grid-auto-rows: minmax(320px auto);
+            grid-gap: $spacer-1;
+            height: 457px;
+            padding-left: $spacer-1;
+    
+        }
+    
+        .listing-tiles{
+            width: 195px;
+            padding: 0;
+        }
+        .absorbtion-tiles{
+            width: 198px;
+    
+        }
+        
+    }
+}

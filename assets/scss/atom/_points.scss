@@ -1,0 +1,30 @@
+.pointsone{
+    display: flex;
+    &__languagein{
+        padding-left: $spacer-3;
+    }
+    &__textin{
+        padding-left: $spacer-2;
+        box-sizing: border-box;
+        margin-bottom: 0;
+        color: $light-ash;
+    }
+    &--lans{
+        &__languagein{
+            padding-left: $spacer-5;
+        }
+    }
+}
+
+
+@include mobile{
+    .pointsone{
+        font-size: .55rem;
+        &--lans{
+            &__languagein{
+                padding-left: $spacer-2;
+                height: 12px;
+            }
+        }
+    }
+}

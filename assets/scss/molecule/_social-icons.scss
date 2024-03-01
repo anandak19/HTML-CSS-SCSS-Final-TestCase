@@ -1,0 +1,15 @@
+.social-icons{
+    &__icon{
+        margin-right: $spacer-3;
+        height: 18px;
+    }
+}
+
+@include mobile{
+    .social-icons{
+        &__icon{
+            margin-right: $spacer-2;
+            height: 14px;
+        }
+    }
+}
