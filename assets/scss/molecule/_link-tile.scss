@@ -1,0 +1,96 @@
+.link-tile{
+  box-sizing: border-box;
+
+
+  &__h1{
+    padding-bottom: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    color: $white;
+  }
+  &__li{
+    padding-bottom: $spacer-2;
+    & a{
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 21px;
+      color: $white;
+      text-decoration: none;
+    }
+  }
+  &__head{
+    height: 24px;
+    padding-bottom: 45px;
+  }
+
+  &__ul{
+    list-style: none;
+    padding-left: 0;
+  }
+  &__section{
+    display: flex;
+  }
+  &__links-two{
+    padding-left: $spacer-7;
+  }
+
+
+  &--beinex{
+    .link-tile{
+      &__li{
+        padding-bottom: $spacer-3;
+      }
+      &__head{
+        padding-bottom: 46px;
+      }
+    }
+  }
+  
+}
+
+
+
+
+@include mobile{
+  .link-tile{
+  
+    &__h1{
+      font-size: 13px;
+      font-weight: normal;
+      line-height: 21px;
+    }
+    &__li{
+      height: 23px;
+      & a{
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 0px;
+      }
+    }
+
+    &__section{
+      flex-direction: column;
+    }
+    &__links-two{
+      padding-left: 0;
+      margin-top: -17px;
+    }
+    &__head{
+      padding-bottom: 28px;
+    }
+  
+    &--beinex{
+      .link-tile{
+        &__li{
+          padding-bottom: $spacer-1;
+        }
+        &__head{
+          padding-bottom: 28px;
+        }
+      }
+    }
+
+    
+  }
+}

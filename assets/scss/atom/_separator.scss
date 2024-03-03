@@ -1,5 +1,12 @@
 .separator {
     border-left: 1px solid #CACACA; 
-    height: 285px;
+    height: 176px;
     // margin: 100px;
+}
+
+
+@include mobile{
+    .separator {
+        height: 252px;
+    }
 }

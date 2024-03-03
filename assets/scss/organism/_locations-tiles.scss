@@ -1,6 +1,5 @@
 .locations-tiles{
     padding: 0 24px;
-    padding-bottom: 100px;
     background-color: #E9E9E9;
     &__carousal{
         display: flex;
@@ -62,7 +61,7 @@
 
 @include mobile{
     .locations-tiles{
-        padding: 0 28px 100px 28px;
+        padding: 0 28px 0 28px;
         &listing-tiles{
             width: 20px;
             margin-left: 10px;
